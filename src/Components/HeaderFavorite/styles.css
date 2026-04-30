@@ -1,0 +1,63 @@
+.ContainerFav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  margin-bottom: -15px;
+  margin-right: 15px;
+}
+.ContainerFav:hover {
+  transform: translateY(-2px);
+}
+.ContainerFav h3 {
+  font-size: 17px;
+  margin: 0;
+  color: #333;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.LikeCart {
+  position: relative;
+}
+.LikeCart img {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+}
+.ContainerFav:hover .LikeCart img {
+  transform: scale(1.15);
+  filter: brightness(0) saturate(100%) invert(21%) sepia(96%) saturate(5000%) hue-rotate(350deg);
+}
+.LikeQuantity {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #dc3545; 
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.LikeQuantity.animate {
+  animation: popFav 0.3s ease;
+}
+@keyframes popFav {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.5) ;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

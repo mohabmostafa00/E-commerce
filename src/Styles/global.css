@@ -1,0 +1,18 @@
+:root {
+    --primary: #2F5D50;   
+    --secondary: #D4AF37; 
+    --bg: #F6F6F6;  
+    --text: #1C1C1C; 
+    --white: #FFFFFF;
+    --border: #E6E6E6;
+}
+.notFound {
+    padding-top: 15%;
+    text-align: center;
+}
+.notFound h1 {
+    font-size: 130px;
+}
+.notFound p {
+    font-size: 50px;
+}

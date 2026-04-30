@@ -1,0 +1,33 @@
+.TotalPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 30px;
+}
+.TotalPrice:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+.TotalPrice span:first-child {
+    color: #444;
+    font-weight: bold;
+    font-size: 20px;
+}
+.TotalPrice span:last-child {
+    color: #444; 
+    font-size: 20px;
+    font-weight: bold;
+}
+.TotalPrice span:last-child .dollar{
+    color: var(--primary); 
+    font-size: 25px;
+    font-weight: bold;
+}

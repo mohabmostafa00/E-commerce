@@ -1,0 +1,57 @@
+.Container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+    margin-bottom: -10px;
+    margin-right: 15px;
+}
+.Container:hover {
+    transform: translateY(-2px);
+}
+.basketCart {
+    position: relative;
+}
+.basketCart img {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+.Container:hover img {
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(48%) sepia(98%) saturate(400%) hue-rotate(90deg);
+}
+.basketQuantity {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.basketQuantity.animate {
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+0% {
+    transform: scale(0.7);
+}
+50% {
+    transform: scale(1.5);
+}
+100% {
+    transform: scale(1);
+}
+}
