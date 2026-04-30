@@ -49,10 +49,9 @@ function Product({ title, img, id, price, max }) {
             {max === 0 ? "Out of stock" : `Available : ${max}`}
           </p>
         </div>
-        <Button
+        <button
           onClick={handleAddToCart}
           disabled={loading}
-          variant="info"
           style={{ color: "white" }}
           className="add-btn"
         >
@@ -68,7 +67,7 @@ function Product({ title, img, id, price, max }) {
           ) : (
             "Add to cart"
           )}
-        </Button>
+        </button>
       </div>
     </>
   );
