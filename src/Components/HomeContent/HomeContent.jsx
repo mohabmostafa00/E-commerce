@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import fashion from "../../assets/Img/girl.png";
@@ -98,8 +98,7 @@ function HomeContent() {
         <button onClick={() => navigate("/categories")}>Shop Now</button>
       </div>
 
-      <Container className="features-section my-5">
-        <Row className="text-center">
+        <Row className="feature-container text-center">
           <Col
             md={4}
             className={`feature-box fade-up ${show && "show delay-1"}`}
@@ -122,7 +121,6 @@ function HomeContent() {
             <p>High quality guaranteed</p>
           </Col>
         </Row>
-      </Container>
     </>
   );
 }

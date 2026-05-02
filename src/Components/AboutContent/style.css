@@ -75,19 +75,27 @@
 }
 
 @media (max-width: 992px) {
+    .about-section {
+        width: 85%;
+        margin: 30px auto;
+    }
     .shop-btn{
         width: 40%;
-
     }
 }
 @media (max-width: 768px) {
+    .about-section {
+        width: 85%;
+        margin: 30px auto;
+    }    
     .shop-btn{
         width: 40%;
     }
 }
 @media (max-width: 567px) {
-    .shop-btn{
-        width: 60%;
+    .about-section {
+        width: 85%;
+        margin: 30px auto;
     }
     .about-header .f-title {
         font-size: 35px;
@@ -104,10 +112,10 @@
         font-size: 25px;
         letter-spacing: -1px;
     }
-    .about-section {
-        width: 85%;
-        margin: 30px auto;
+    .shop-btn{
+        width: 60%;
     }
+
 }
 
 
@@ -174,6 +182,18 @@
     opacity: 0.9;
 }
 
+@media (max-width: 992px) {
+    .about-contact {
+        width: 85%;
+        margin: 30px auto;
+    }
+}
+@media (max-width: 768px) {
+    .about-contact {
+        width: 85%;
+        margin: 30px auto;
+    }
+}
 @media (max-width: 567px) {
     .about-contact {
         width: 85%;
@@ -232,7 +252,17 @@
     background-color: var(--secondary);
     box-shadow: 1px 1px 10px var(--secondary)
 }
+@media (max-width: 992px) {
+    .about-cta {
+        width: 85%;
+        margin: 30px auto;
+    }
+}
 @media (max-width: 768px) {
+    .about-cta {
+        width: 85%;
+        margin: 30px auto;
+    }
     .about-cta h1 {
         font-size: 30px;
     }
@@ -266,45 +296,67 @@
 }
 
 
-
-.about-card {
-    padding: 60px 20px;
-    border-radius: 15px;
-    transition: all 0.3s ease;
+.about-features{
+    width: 85%;
+    margin: 30px auto;
+}
+.about-card{
+    background: linear-gradient(135deg, #ffffffcc, #ffffff80);
+    box-shadow: 0 10px 30px #2f5d5015;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff40;
+    padding: 35px 25px;
+    border-radius: 20px;
+    transition: 0.4s ease;
     cursor: pointer;
+    transform: translateY(30px);
+    opacity: 0;
 }
-.about-card:hover {
-    transform: translateY(-10px);
-    background: #fff;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+.about-card.show{
+    transform: translateY(0);
+    opacity: 1;
 }
-.about-card:hover h4{
-    color: var(--secondary);
-    margin-bottom: 10px;
+.about-card:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px #2f5d5030;
+    background: linear-gradient(135deg, #2F5D50 40%, #23463c);
+    color: white;
 }
-.about-icon {
+.about-icon{
     font-size: 22px;
+    font-weight: bold;
     margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+.about-card p{
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+.about-card:hover p{
+    opacity: 1;
+}
+.about-card:hover .about-icon{
+    transform: scale(1.1);
 }
 
-@media (max-width: 992px){
+
+@media (max-width: 992px) {
     .about-card {
-        width: 80%;
-        margin: 5px auto;
+        box-shadow: none;
     }
 }
 @media (max-width: 768px) {
     .about-card {
-        width: 80%;
-        margin: 30px auto;
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 576px) {
-    .about-card {
-        width: 80%;
-        margin: 30px auto;
+    .feature-box {
+        margin-bottom: 10px ;
     }
 }
+
 
 
 .fade-up {
