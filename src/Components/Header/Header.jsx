@@ -9,7 +9,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { useEffect, useState } from "react";
-import HeaderToggle from "../../HeaderToggle/HeaderToggle";
+import HeaderToggle from "../HeaderToggle/HeaderToggle";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);

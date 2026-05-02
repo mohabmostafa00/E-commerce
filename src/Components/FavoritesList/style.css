@@ -86,18 +86,6 @@
 .productsInfo {
     animation: fadeIn 0.3s ease;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .fade-up {
     opacity: 0;
     transform: translateY(15px);
@@ -110,3 +98,36 @@
 .offcanvas-backdrop {
     display: none !important;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 992px) {
+    .favorite-container {
+        padding: 10px 60px;
+    }
+}
+@media (max-width: 768px) {
+    .favorite-container {
+        padding: 10px 90px;
+    }
+}
+@media (max-width: 576px) {
+        .favorite-container {
+        padding: 30px 80px;
+        margin: auto;
+    }
+}
+
+
+
+
+

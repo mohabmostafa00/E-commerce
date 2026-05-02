@@ -1,5 +1,5 @@
 import Heading from "../Components/Heading/Heading";
-import AboutContent from "../Components/ِAboutContent/AboutContent";
+import AboutContent from "../Components/AboutContent/AboutContent";
 function AboutUs() {
   return (
     <>

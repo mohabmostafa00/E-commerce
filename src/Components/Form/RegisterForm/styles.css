@@ -84,4 +84,20 @@ p[style*="green"] {
     opacity: 1;
     transform: translateY(0);
 }
+@media (max-width: 576px) {
+    .Register-form {
+        padding:35px;
+    }
+    .register-box {
+        margin:60px 0;
+    }
+}
+@media (max-width: 768px) {
+    .Register-form {
+        padding:35px;
+    }
+    .register-box {
+        margin:60px 0;
+    }
+}
 

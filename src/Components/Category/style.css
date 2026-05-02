@@ -51,3 +51,8 @@
     background-color: var(--primary);
     color: white;
 }
+@media (max-width: 576px) {
+    .categoryTitle  {
+        font-size: 18px ;
+    }
+}

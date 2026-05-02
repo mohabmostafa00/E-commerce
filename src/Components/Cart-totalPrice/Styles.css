@@ -1,33 +1,118 @@
-.TotalPrice {
+.TPrice-container{
+    width: 100%;
+    padding: 30px 10%;
+}
+.TotalPrice{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    margin-top: 20px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    font-size: 18px;
-    font-weight: 600;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin-bottom: 30px;
+    background: linear-gradient(135deg,#2F5D50 50%,#23463c);
+    padding: 22px 28px;
+    border-radius: 20px;
+    box-shadow:
+    0 10px 25px #2f5d5040,
+    inset 0 1px 1px #ffffff1a;
+    color: white;
+    transition: 0.3s ease;
 }
-.TotalPrice:hover {
+.TotalPrice:hover{
     transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+    box-shadow:
+    0 15px 35px #2f5d5060,
+    inset 0 1px 1px #ffffff1a;
 }
-.TotalPrice span:first-child {
-    color: #444;
-    font-weight: bold;
-    font-size: 20px;
+.price-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
-.TotalPrice span:last-child {
-    color: #444; 
-    font-size: 20px;
-    font-weight: bold;
+.title{
+    font-size: 22px;
+    font-weight: 700;
 }
-.TotalPrice span:last-child .dollar{
-    color: var(--primary); 
-    font-size: 25px;
+.sub-title{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.price-box{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #ffffff14;
+    padding: 10px 18px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+}
+.price-number{
+    font-size: 28px;
     font-weight: bold;
+    letter-spacing: 1px;
+}
+.dollar{
+    font-size: 18px;
+    font-weight: bold;
+    color: #D4AF37;
+}
+
+
+@media (max-width: 992px){
+    .TPrice-container {
+        padding: 0 30px;
+    }
+    .TPrice-container{
+        padding: 20px 8%;
+    }
+    .TotalPrice{
+        padding: 20px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .price-number{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px){
+    .TPrice-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .TotalPrice{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .price-text{
+        align-items: center;
+    }
+    .price-box{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px){
+    .TotalPrice{
+        width: 90%;
+        margin: 0 auto;
+        padding: 18px 15px;
+        border-radius: 16px;
+    }
+    .title{
+        font-size: 18px;
+    }
+    .sub-title{
+        font-size: 12px;
+    }
+    .price-number{
+        font-size: 22px;
+    }
+    .dollar{
+        font-size: 16px;
+    }
+    .price-box{
+        padding: 10px 14px;
+        border-radius: 12px;
+    }
 }

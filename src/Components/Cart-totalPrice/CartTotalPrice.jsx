@@ -9,11 +9,18 @@ function CartTotalPrice() {
   }, 0);
   return (
     <>
-      <div className="TotalPrice">
-        <span>Total Price :</span>
-        <span>
-          {TotalPrice.toFixed(2)} <span className="dollar">$</span>
-        </span>
+      <div className="TPrice-container">
+        <div className="TotalPrice">
+          <div className="price-text">
+            <span className="title">Total Price</span>
+            <span className="sub-title">Final payment amount</span>
+          </div>
+
+          <div className="price-box">
+            <span className="price-number">{TotalPrice.toFixed(2)}</span>
+            <span className="dollar">$</span>
+          </div>
+        </div>
       </div>
     </>
   );

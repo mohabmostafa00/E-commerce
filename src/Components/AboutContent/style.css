@@ -70,12 +70,14 @@
     transition: 0.3s;
 }
 .shop-btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.1) !important;
     box-shadow: 1px 1px 15px var(--secondary);
 }
+
 @media (max-width: 992px) {
     .shop-btn{
         width: 40%;
+
     }
 }
 @media (max-width: 768px) {
@@ -88,17 +90,23 @@
         width: 60%;
     }
     .about-header .f-title {
-        font-size: 25px;
+        font-size: 35px;
     }
     .about-header .s-title {
-        font-size: 25px;
+        font-size: 35px;
     }
     .about-header .s-title span {
-        font-size: 25px;
+        font-size: 35px;
+        line-height: 2;
+        margin-bottom: 10px;
     }
     .about-header .s-title span:last-child span {
-        font-size: 15px;
+        font-size: 25px;
         letter-spacing: -1px;
+    }
+    .about-section {
+        width: 85%;
+        margin: 30px auto;
     }
 }
 
@@ -166,6 +174,14 @@
     opacity: 0.9;
 }
 
+@media (max-width: 567px) {
+    .about-contact {
+        width: 85%;
+        margin: 30px auto;
+    }
+}
+
+
 
 
 .about-cta {  
@@ -216,14 +232,37 @@
     background-color: var(--secondary);
     box-shadow: 1px 1px 10px var(--secondary)
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+    .about-cta h1 {
+        font-size: 30px;
+    }
+    .about-cta p {
+        font-size: 17px;
+        line-height: 2;
+        margin-top: 10px;
+    }
+    .about-btn {
+        width: fit-content;
+        margin: 50px auto;
+    }
+}
+    @media (max-width: 576px) {
+    .about-cta {
+        width: 85%;
+        margin: 30px auto;
+    }
     .about-cta h1{
-        font-size: 24px;
+        font-size: 22px;
     }
     .about-cta p{
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 2;
+        margin-top: 20px;
     }
-
+    .about-btn {
+        width: fit-content;
+        margin: 50px auto;
+    }
 }
 
 
@@ -246,6 +285,25 @@
 .about-icon {
     font-size: 22px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 992px){
+    .about-card {
+        width: 80%;
+        margin: 5px auto;
+    }
+}
+@media (max-width: 768px) {
+    .about-card {
+        width: 80%;
+        margin: 30px auto;
+    }
+}
+@media (max-width: 576px) {
+    .about-card {
+        width: 80%;
+        margin: 30px auto;
+    }
 }
 
 
