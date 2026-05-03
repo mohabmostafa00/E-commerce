@@ -11,7 +11,7 @@ import "./style.css";
 function FavoritesList({ item, show }) {
   const { title, img, id, price, max } = item;
   const dispatch = useDispatch();
-  const favorites = useSelector((state) => state.Favorite.items || []);
+  const favorites = useSelector((state) => state.Favorite || []);
   const fav = favorites.some((item) => item.id === id);
 
   const handleAddToLike = () => {

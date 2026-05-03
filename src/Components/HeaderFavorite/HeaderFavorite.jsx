@@ -5,7 +5,7 @@ import LikeList from "../../assets/Svg/Like-List.svg";
 import "./styles.css";
 
 function Favorite() {
-  const FavoriteList = useSelector((state) => state.Favorite.items);
+  const FavoriteList = useSelector((state) => state.Favorite);
   const navigate = useNavigate();
   const [Animate, setAnimate] = useState(false);
   useEffect(() => {

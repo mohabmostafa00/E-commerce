@@ -14,7 +14,7 @@ import "./style.css";
 function Product({ title, img, id, price, max }) {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
-  const favorites = useSelector((state) => state.Favorite.items || []);
+  const favorites = useSelector((state) => state.Favorite || []);
   const fav = favorites.some((item) => item.id === id);
 
   const handleAddToCart = async () => {
