@@ -6,14 +6,17 @@ import { useEffect, useState } from "react";
 
 function Cart() {
   const cart = useSelector((state) => state.cart);
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-  const timer = setTimeout(() => {
-    setShow(true);
-  }, 100);
 
-  return () => clearTimeout(timer);
-}, []);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShow(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       {cart.length === 0 ? (
@@ -22,9 +25,16 @@ function Cart() {
         </h2>
       ) : (
         <>
+          <Heading title="Cart" />
+
           <div className="cartContainer">
-            {cart.map((item  , index) => (
-              <CartItem key={item.id} item={item} index={index} show={show}/>
+            {cart.map((item, index) => (
+              <CartItem
+                key={item.id}
+                item={item}
+                index={index}
+                show={show}
+              />
             ))}
           </div>
 

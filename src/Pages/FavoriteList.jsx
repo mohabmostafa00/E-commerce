@@ -1,33 +1,36 @@
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
-import { fetchFavorites } from "../Store/Favorite/Favorite-Slice";
+import { useSelector } from "react-redux";
+import { useState, useEffect } from "react";
 import FavoritesList from "../Components/FavoritesList/FavoritesList";
 
 function FavoriteList() {
-  const Favorites = useSelector((state) => state.Favorite.items);
-  const dispatch = useDispatch();
+  const Favorites = useSelector((state) => state.Favorite);
+
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    dispatch(fetchFavorites());
-    setShow(true);
-  }, [dispatch]);
+    const timer = setTimeout(() => {
+      setShow(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <>
-      <div className="favorite-container">
-        {Favorites.length === 0 ? (
-          <h2>No favorites yet</h2>
-        ) : (
-          Favorites.map((item) => (
-            <FavoritesList
-              key={item.id}
-              item={item}
-              show={show}
-            />
-          ))
-        )}
-      </div>
-    </>
+    <div className="favorite-container">
+      {Favorites.length === 0 ? (
+        <h2 style={{ textAlign: "center", marginTop: "30px" }}>
+          No favorites yet
+        </h2>
+      ) : (
+        Favorites.map((item) => (
+          <FavoritesList
+            key={item.id}
+            item={item}
+            show={show}
+          />
+        ))
+      )}
+    </div>
   );
 }
 
