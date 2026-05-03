@@ -1,26 +1,20 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Category from "../Components/Category/Category";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
-import { FetchCategories } from "../Store/Categories/categorySlice";
+import { useSelector } from "react-redux";
+import { useState } from "react";
 import "../Styles/global.css";
 import Heading from "../Components/Heading/Heading";
 
 function Categories() {
   const { categories } = useSelector((state) => state.category);
-  const [show, setShow] = useState(false);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(FetchCategories());
-    setTimeout(() => {
-      setShow(true);
-    }, 200);
-  }, [dispatch]);
+
+  const [show] = useState(true);
 
   return (
     <>
       <Container>
         <Heading title="Categories" />
+
         <Row>
           {categories.map((cat, index) => (
             <Col
