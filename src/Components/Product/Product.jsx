@@ -37,10 +37,10 @@ function Product({ title, img, id, price, max }) {
     <>
       <div className="product">
         <div className="Like-Btn" onClick={handleAddToLike}>
-          <img src={fav ? Like : disLike} />
+          <img className="like-Icon" src={fav ? Like : disLike} />
         </div>
         <div className="productImg">
-          <img src={img} alt={title} />
+          <img className="like-Icon" src={img} alt={title} />
         </div>
         <div className="productText">
           <h2>{title}</h2>
