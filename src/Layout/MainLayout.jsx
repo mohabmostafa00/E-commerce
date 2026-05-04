@@ -23,7 +23,7 @@ function MainLayout() {
         <Header />
 
         <main className="wrapper">
-          <Outlet />
+          <Outlet/>
         </main>
 
         <Footer />

@@ -29,12 +29,7 @@ function Cart() {
 
           <div className="cartContainer">
             {cart.map((item, index) => (
-              <CartItem
-                key={item.id}
-                item={item}
-                index={index}
-                show={show}
-              />
+              <CartItem key={item.id} item={item} index={index} show={show} />
             ))}
           </div>
 

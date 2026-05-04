@@ -74,6 +74,7 @@
   }
 }
 
+/* ================= Responsive ================= */
 
 @media (max-width: 992px) {
   .hero {
@@ -142,13 +143,6 @@
     margin: 0;
 }
 }
-
-
-
-
-
-
-
 
 
 
@@ -225,6 +219,9 @@
   background-color: var(--secondary);
   color: white ;
 }
+
+/* ================= Responsive ================= */
+
 @media (max-width: 992px) {
   .products-container {
     width: 85%;
@@ -243,9 +240,6 @@
     padding: 10px 30px;
   }  
 }
-
-
-
 
 
 
@@ -296,6 +290,8 @@
     box-shadow: 0 0 12px  var(--secondary);
 }
 
+/* ================= Responsive ================= */
+
 @media (max-width: 992px) {
   .welcome-section {
     width: 85%;
@@ -343,6 +339,7 @@
 }
 
 
+
 .feature-container{
     width: 85%;
     margin: 30px auto;
@@ -387,69 +384,6 @@
     transform: scale(1.1);
 }
 
-
-
-
-
-@media (max-width: 992px) {
-    .feature-box {
-      box-shadow: none;
-    }
-}
-@media (max-width: 768px) {
-    .feature-box {
-      margin-bottom: 10px;
-    }
-}
-@media (max-width: 576px) {
-    .feature-box {
-      margin-bottom: 10px;
-    }
-}
-
-
-/* .features-section {
-    padding: 0px 70px;
-}
-.feature-box {
-    padding: 40px 10px;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.feature-box h4 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-.feature-box p {
-    color: #666;
-    font-size: 15px;
-}
-.feature-box:hover {
-    transform: translateY(-10px);
-    background: #fff;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-.feature-box:hover h4 {
-    color: var(--secondary);
-}
-
-@media (max-width: 768px) {
-    .feature-box {
-        width: 85%;
-        margin: 5px auto;
-    }
-}
-@media (max-width: 576px) {
-    .feature-box {
-        width: 85%;
-        margin: 5px auto;
-    }
-} */
-
-
-
-
 .fade-up,
 .fade-right {
     opacity: 0;
@@ -470,4 +404,20 @@
     transform: translate(0, 0);
 }
 
+/* ================= Responsive ================= */
 
+@media (max-width: 992px) {
+    .feature-box {
+      box-shadow: none;
+    }
+}
+@media (max-width: 768px) {
+    .feature-box {
+      margin-bottom: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .feature-box {
+      margin-bottom: 10px;
+    }
+}

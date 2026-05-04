@@ -4,7 +4,7 @@ import LoginForm from "../Components/Form/LoginForm/LoginForm";
 function Login() {
   return (
     <>
-      <Heading title="User Login"/>
+      <Heading title="User Login" />
       <LoginForm />
     </>
   );

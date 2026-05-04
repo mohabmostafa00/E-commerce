@@ -74,6 +74,8 @@
     box-shadow: 1px 1px 15px var(--secondary);
 }
 
+/* ================= Responsive ================= */
+
 @media (max-width: 992px) {
     .about-section {
         width: 85%;
@@ -115,7 +117,6 @@
     .shop-btn{
         width: 60%;
     }
-
 }
 
 
@@ -182,6 +183,8 @@
     opacity: 0.9;
 }
 
+/* ================= Responsive ================= */
+
 @media (max-width: 992px) {
     .about-contact {
         width: 85%;
@@ -200,7 +203,6 @@
         margin: 30px auto;
     }
 }
-
 
 
 
@@ -252,6 +254,9 @@
     background-color: var(--secondary);
     box-shadow: 1px 1px 10px var(--secondary)
 }
+
+/* ================= Responsive ================= */
+
 @media (max-width: 992px) {
     .about-cta {
         width: 85%;
@@ -294,6 +299,7 @@
         margin: 50px auto;
     }
 }
+
 
 
 .about-features{
@@ -340,6 +346,7 @@
     transform: scale(1.1);
 }
 
+/* ================= Responsive ================= */
 
 @media (max-width: 992px) {
     .about-card {

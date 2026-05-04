@@ -3,7 +3,7 @@ import { deleteToCart } from "../../Store/Cart/cartSlice";
 import { useDispatch } from "react-redux";
 import { increaseQuantity, decreaseQuantity } from "../../Store/Cart/cartSlice";
 
-function CartItem({item , show }) {
+function CartItem({ item, show }) {
   const { id, img, title, price, quantity, max } = item;
   const dispatch = useDispatch();
   return (
@@ -29,14 +29,14 @@ function CartItem({item , show }) {
           <span className="quantity-controls">Quantity : {quantity}</span>
           <div>
             <button
-            className="quantity-btn"
+              className="quantity-btn"
               onClick={() => dispatch(decreaseQuantity(id))}
               disabled={quantity <= 1}
             >
               -
             </button>
             <button
-            className="quantity-btn"
+              className="quantity-btn"
               onClick={() => dispatch(increaseQuantity(id))}
               disabled={quantity >= max}
               style={{ marginLeft: "5px" }}

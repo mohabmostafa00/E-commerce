@@ -54,6 +54,7 @@
     color: #D4AF37;
 }
 
+/* ================= Responsive ================= */
 
 @media (max-width: 992px){
     .TPrice-container {

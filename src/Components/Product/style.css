@@ -89,7 +89,6 @@
 .Like-Btn:hover {
     transform: scale(1.1);
 }
-
 .Like-Btn .like-Icon {
     width: 25px ;
     height:25px ;
@@ -97,8 +96,6 @@
     display: block;
     flex-shrink: 0;
 }
-
-
 
 /* ================= Responsive ================= */
 

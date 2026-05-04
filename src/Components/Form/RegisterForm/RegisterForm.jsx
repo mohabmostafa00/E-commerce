@@ -2,7 +2,7 @@ import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 import api from "../../../Api/axios.js";
 import { Spinner, InputGroup } from "react-bootstrap";
 import "./styles.css";
@@ -22,12 +22,11 @@ function RegisterUser() {
   const [repetition, setRepetition] = useState(false);
   const [show, setShow] = useState(false);
   useEffect(() => {
-  const id = requestAnimationFrame(() => {
-    setShow(true);
-  });
-  return () => cancelAnimationFrame(id);
-}, []);
-
+    const id = requestAnimationFrame(() => {
+      setShow(true);
+    });
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   const onSubmit = async (data) => {
     if (repetition) return;
@@ -194,7 +193,10 @@ function RegisterUser() {
                 )}
               </Form.Group>
 
-              <button type="submit" className={`mb-4 Submit-btn ${show ? "show" : ""}`}>
+              <button
+                type="submit"
+                className={`mb-4 Submit-btn ${show ? "show" : ""}`}
+              >
                 {repetition ? <Spinner size="sm" /> : "Submit"}
               </button>
             </Form>

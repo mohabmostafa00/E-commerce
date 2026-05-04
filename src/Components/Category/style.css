@@ -51,6 +51,9 @@
     background-color: var(--primary);
     color: white;
 }
+
+/* ================= Responsive ================= */
+
 @media (max-width: 576px) {
     .categoryTitle  {
         font-size: 18px ;

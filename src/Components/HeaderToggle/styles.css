@@ -48,6 +48,9 @@
     transform: rotate(180deg);
     transition: 0.5s;
 }
+
+/* ================= Responsive ================= */
+
 @media (max-width: 576px) {
     .toggle {
         width: 35px;

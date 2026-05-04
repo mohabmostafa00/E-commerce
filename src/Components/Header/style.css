@@ -74,6 +74,8 @@ header.scrolled {
     border: 1.5px solid var(--secondary);
 }
 
+/* ================= Responsive ================= */
+
 @media (max-width: 576px) {
     .headerLogo  {
         font-size: 30px;

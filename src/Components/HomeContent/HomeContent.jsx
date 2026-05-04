@@ -98,29 +98,20 @@ function HomeContent() {
         <button onClick={() => navigate("/categories")}>Shop Now</button>
       </div>
 
-        <Row className="feature-container text-center">
-          <Col
-            md={4}
-            className={`feature-box fade-up ${show && "show delay-1"}`}
-          >
-            <h4>🚚 Fast Delivery</h4>
-            <p>We deliver your products quickly</p>
-          </Col>
-          <Col
-            md={4}
-            className={`feature-box fade-up ${show && "show delay-2"}`}
-          >
-            <h4>💰 Best Prices</h4>
-            <p>Affordable prices for everyone</p>
-          </Col>
-          <Col
-            md={4}
-            className={`feature-box fade-up ${show && "show delay-3"}`}
-          >
-            <h4>⭐ Quality Products</h4>
-            <p>High quality guaranteed</p>
-          </Col>
-        </Row>
+      <Row className="feature-container text-center">
+        <Col md={4} className={`feature-box fade-up ${show && "show delay-1"}`}>
+          <h4>🚚 Fast Delivery</h4>
+          <p>We deliver your products quickly</p>
+        </Col>
+        <Col md={4} className={`feature-box fade-up ${show && "show delay-2"}`}>
+          <h4>💰 Best Prices</h4>
+          <p>Affordable prices for everyone</p>
+        </Col>
+        <Col md={4} className={`feature-box fade-up ${show && "show delay-3"}`}>
+          <h4>⭐ Quality Products</h4>
+          <p>High quality guaranteed</p>
+        </Col>
+      </Row>
     </>
   );
 }
