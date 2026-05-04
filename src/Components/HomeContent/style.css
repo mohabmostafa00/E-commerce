@@ -60,7 +60,7 @@
     max-width: 450px;
     height: 450px;
     border-radius: 20px;
-    transition: 0.4s;
+    transition: 0.5s;
     margin-right: -50px;
 }
 @keyframes fadeUp {
