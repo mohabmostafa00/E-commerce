@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import FavoritesList from "../Components/FavoritesList/FavoritesList";
+import Heading from "../Components/Heading/Heading"
 
 function FavoriteList() {
   const Favorites = useSelector((state) => state.Favorite);
@@ -16,7 +17,9 @@ function FavoriteList() {
   }, []);
 
   return (
-    <div className="favorite-container">
+    <>
+    <Heading title="Favorite List"/>
+        <div className="favorite-container">
       {Favorites.length === 0 ? (
         <h2 style={{ textAlign: "center", marginTop: "30px" }}>
           No favorites yet
@@ -31,6 +34,7 @@ function FavoriteList() {
         ))
       )}
     </div>
+    </>
   );
 }
 

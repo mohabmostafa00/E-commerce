@@ -1,13 +1,42 @@
 .page-heading {
-    text-align: center;
-    margin-top: 40px 0 ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px ;
+    position: relative;
 }
 .page-heading h2 {
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
     color: #222;
+    letter-spacing: 1px;
     position: relative;
-    display: inline-block;
-    margin-top: 20px;
+    padding-bottom: 10px;
+    transition: 0.3s ease;
+}
+.page-heading h2 {
+    background: linear-gradient(360deg, #2F5D50 30%, #23463c );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+
+/* ================= Responsive ================= */
+
+@media (max-width: 992px) {
+    .page-heading h2 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 768px) {
+    .page-heading h2 {
+        font-size: 33px;
+    }
+}
+@media (max-width: 576px) {
+    .page-heading h2 {
+        font-size: 28px;
+    }
+}

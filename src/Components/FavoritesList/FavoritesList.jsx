@@ -30,7 +30,11 @@ function FavoritesList({ item, show }) {
       <div className={`favorite-List fade-up ${show ? "show" : ""}`}>
         <div className="products">
           <div className="Like-Btn" onClick={handleAddToLike}>
-            <img src={fav ? Like : disLike} />
+            <img
+              className="like-icon"
+              src={fav ? Like : disLike}
+              alt="favorite"
+            />
           </div>
           <div className="productsImg">
             <img src={item.img} alt={item.title} />
@@ -41,7 +45,6 @@ function FavoritesList({ item, show }) {
             <button
               onClick={handleDelete}
               variant="secondary"
-              style={{ color: "white", width: "100px" }}
               className="btn-delete"
             >
               Delete
